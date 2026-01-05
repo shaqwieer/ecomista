@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-01-05 14:35:19.902776",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "main_information_section",
+  "connection_name",
+  "connection_status",
+  "partner",
+  "column_break_cslf",
+  "integration_provider",
+  "service_provider",
+  "last_sync",
+  "extra_information_section",
+  "integration_base_url",
+  "integration_access_token",
+  "integration_webhook_secret",
+  "column_break_fpiw",
+  "provider_base_url",
+  "provider_access_token"
+ ],
+ "fields": [
+  {
+   "fieldname": "main_information_section",
+   "fieldtype": "Section Break",
+   "label": "Main Information"
+  },
+  {
+   "fieldname": "connection_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Connection Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "connection_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Connection Status",
+   "options": "Active\nPaused",
+   "reqd": 1
+  },
+  {
+   "fieldname": "partner",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Partner",
+   "options": "Partner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_cslf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "integration_provider",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Integration Provider",
+   "options": "Integration Provider",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_provider",
+   "fieldtype": "Link",
+   "label": "Service Provider",
+   "options": "Service Provider",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_sync",
+   "fieldtype": "Datetime",
+   "label": "Last Sync ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "extra_information_section",
+   "fieldtype": "Section Break",
+   "label": "Extra Information"
+  },
+  {
+   "fieldname": "integration_base_url",
+   "fieldtype": "Data",
+   "label": "Integration Base Url"
+  },
+  {
+   "fieldname": "integration_access_token",
+   "fieldtype": "Data",
+   "label": "Integration Access Token"
+  },
+  {
+   "fieldname": "integration_webhook_secret",
+   "fieldtype": "Data",
+   "label": "Integration Webhook Secret"
+  },
+  {
+   "fieldname": "column_break_fpiw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "provider_base_url",
+   "fieldtype": "Data",
+   "label": "Provider Base Url"
+  },
+  {
+   "fieldname": "provider_access_token",
+   "fieldtype": "Data",
+   "label": "Provider Access Token"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-05 15:19:09.843835",
+ "modified_by": "Administrator",
+ "module": "Ecomista",
+ "name": "Integration Connection",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
